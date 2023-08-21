@@ -10,6 +10,11 @@
       .list-one{
         list-style-type: decimal;
       }
+      #btn-sell[disabled] {
+         background-color: #f7b6e6; 
+         cursor: not-allowed;
+         color: white;
+        }
     </style>
 </head>
 <body>
@@ -20,19 +25,22 @@
               <div class="text-center">
                 <h3 class="text-2xl font-bold mb-12">---SALE FEVER---</h3>
                 <h1 class="md:text-5xl text-4xl font-bold text-[#111111] ">Purchase TK 200 or <br> above & get <span class="text-[#E527B2]">20% off</span></h1>
-                <p class="mt-12 text-xl font-medium">Use Promo Code  <span><button class="btn btn-secondary text-white font-bold px-8 text-xl">SELL200</button></span></p>
+                <div class="lg:pb-10 pb-16">
+                <p class="mt-12 text-xl font-medium">Use Promo Code  <span><button id="btn-sell" disabled class="btn btn-secondary text-white font-bold lg:px-8  text-xl">SELL200</button></span></p>
+              </div>
               </div>
             </div>
           </div>
     <main class=" mt-10 bg-[#F8F8F8]">
         <div class="flex flex-col lg:flex-row w-11/12 mx-auto">
           <div class="">
+            <!-- --------------------first section------------------- -->
             <h1 class="text-3xl font-semibold py-10">Kitchenware</h1>
             <div class="flex-1 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             <!-- first card -->
             <div class="card  bg-base-100 shadow-xl " onclick="handelClick(this)">
-              <figure>
-                <img src="./images/prod1.png" alt="Shoes" class="rounded-xl bg-[#1111110D]  px-20 py-8" />
+              <figure class="pt-4">
+                <img src="./images/prod1.png" alt="Shoes" class="rounded-xl bg-[#1111110D]  px-[76px] py-8" />
               </figure>
               <div class="card-body items-center text-center">
                 <div class="rating">
@@ -48,7 +56,7 @@
             </div>
             <!-- second card -->
             <div class="card  bg-base-100 shadow-xl" onclick="handelClick(this)">
-              <figure>
+              <figure class="pt-4">
                 <img src="./images/prod2.png" alt="Shoes" class="rounded-xl bg-[#1111110D]  px-14 py-7" />
               </figure>
               <div class="card-body items-center text-center">
@@ -65,7 +73,7 @@
             </div>
             <!-- third card -->
             <div class="card  bg-base-100 shadow-xl" onclick="handelClick(this)">
-              <figure>
+              <figure class="pt-4">
                 <img src="./images/prod3.png" alt="Shoes" class="rounded-xl bg-[#1111110D]  px-14 py-8" />
               </figure>
               <div class="card-body items-center text-center">
@@ -81,12 +89,13 @@
               </div>
             </div>
           </div>
+          <!-- --------------------second section------------------- -->
           <h1 class="text-3xl font-semibold py-10">Sportswear</h1>
           <div class="flex-1 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             <!-- forth card -->
             <div class="card  bg-base-100 shadow-xl" onclick="handelClick(this)">
-              <figure>
-                <img src="./images/prod4.png" alt="Shoes" class="rounded-xl bg-[#1111110D]  px-12 py-10" />
+              <figure class="pt-4">
+                <img src="./images/prod4.png" alt="Shoes" class="rounded-xl bg-[#1111110D]  px-10 py-10" />
               </figure>
               <div class="card-body items-center text-center">
                 <div class="rating">
@@ -102,7 +111,7 @@
             </div>
             <!-- fifth card -->
             <div class="card  bg-base-100 shadow-xl" onclick="handelClick(this)">
-              <figure>
+              <figure class="pt-4">
                 <img src="./images/prod5.png" alt="Shoes" class="rounded-xl bg-[#1111110D]  px-16 py-8" />
               </figure>
               <div class="card-body items-center text-center">
@@ -119,9 +128,9 @@
             </div>
             <!-- sixth card -->
             <div class="card  bg-base-100 shadow-xl" onclick="handelClick(this)">
-              <figure>
+              <figure class="pt-4">
                 <img src="./images/prod6.png" alt="Shoes" class="rounded-xl bg-[#1111110D]  px-12 py-8" />
-              </figure>
+              </figure >
               <div class="card-body items-center text-center">
                 <div class="rating">
                   <input type="radio" name="rating-6" class="mask mask-star-2 bg-orange-400" />
@@ -135,9 +144,64 @@
               </div>
             </div>
           </div>
+          <!-- --------------------third section------------------- -->
+          <h1 class="text-3xl font-semibold py-10">Furniture</h1>
+          <div class="flex-1 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <!-- seventh card -->
+            <div class="card  bg-base-100 shadow-xl" onclick="handelClick(this)">
+              <figure class="pt-4">
+                <img src="./images/prod7.png" alt="Shoes" class="rounded-xl bg-[#1111110D]  px-12 py-8" />
+              </figure>
+              <div class="card-body items-center text-center">
+                <div class="rating">
+                  <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                  <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400"  />
+                  <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" checked/>
+                  <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                  <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                </div>
+                <h1 class="text-lg font-semibold">Single Relax Chair</h1>
+                <h3 class="text-[#11111180]"><span>185.00</span> TK</h3>
+              </div>
+            </div>
+            <!-- eighth card -->
+            <div class="card  bg-base-100 shadow-xl" onclick="handelClick(this)">
+              <figure class="pt-4">
+                <img src="./images/prod8.png" alt="Shoes" class="rounded-xl bg-[#1111110D]  px-16 py-8" />
+              </figure>
+              <div class="card-body items-center text-center">
+                <div class="rating">
+                  <input type="radio" name="rating-8" class="mask mask-star-2 bg-orange-400" />
+                  <input type="radio" name="rating-8" class="mask mask-star-2 bg-orange-400"  />
+                  <input type="radio" name="rating-8" class="mask mask-star-2 bg-orange-400" />
+                  <input type="radio" name="rating-8" class="mask mask-star-2 bg-orange-400" />
+                  <input type="radio" name="rating-8" class="mask mask-star-2 bg-orange-400" checked/>
+                </div>
+                <h1 class="text-lg font-semibold">Children play</h1>
+                <h3 class="text-[#11111180]"> <span>299.00</span> TK</h3>
+              </div>
+            </div>
+            <!-- ninth card -->
+            <div class="card  bg-base-100 shadow-xl" onclick="handelClick(this)">
+              <figure class="pt-4">
+                <img src="./images/prod9.png" alt="Shoes" class="rounded-xl bg-[#1111110D]  px-[42px] py-8" />
+              </figure >
+              <div class="card-body items-center text-center">
+                <div class="rating">
+                  <input type="radio" name="rating-9" class="mask mask-star-2 bg-orange-400" />
+                  <input type="radio" name="rating-9" class="mask mask-star-2 bg-orange-400" checked />
+                  <input type="radio" name="rating-9" class="mask mask-star-2 bg-orange-400" />
+                  <input type="radio" name="rating-9" class="mask mask-star-2 bg-orange-400" />
+                  <input type="radio" name="rating-9" class="mask mask-star-2 bg-orange-400" />
+                </div>
+                <h1 class="text-lg font-semibold">Flexible Sofa</h1>
+                <h3 class="text-[#11111180]">339.00<span> TK</span></h3>
+              </div>
+            </div>
+          </div>
           </div>
           <div class="w-[400px] mx-auto">
-            <div class="pt-32 pl-16">
+            <div class="lg:pt-32 lg:pl-16 pt-8">
               <div class="form-control w-68 h-40 bg-[#FFFFFF] rounded-xl p-5">
                 <h1 class="font-semibold text-lg pb-5">Have coupon?</h1>
                 <div class="input-group">
@@ -146,7 +210,7 @@
                 </div>
               </div>
             </div>
-            <div class="pt-8 pl-16">
+            <div class="lg:pt-8 lg:pl-16">
             <div class=" w-80 h-160 bg-[#FFFFFF] rounded-xl p-5" >
              <div class="p-5 text-lg font-semibold">
               <ol class="list-one" id="selected-items">
@@ -158,7 +222,21 @@
              <p class="text-lg font-semibold pb-2">Discount:<span id="discount" class="text-[#11111180]"> 00</span><span class="text-[#11111180]"> TK</span></p> 
              <p class="text-lg font-semibold pb-2">Total:<span id="total" class="text-[#11111180]"> 00</span><span class="text-[#11111180]"> TK</span></p> 
             </div>
-            <button class="btn btn-square w-[320px] bg-[#E527B2] px-8 text-white">Make Purchase</button>
+            <!-- Open the modal using ID.showModal() method -->
+            <button id="btn-purchase" disabled class="btn w-[320px] btn-square bg-[#E527B2] text-white px-8" onclick="my_modal_1.showModal()">Make Purchase</button>
+            <dialog id="my_modal_1" class="modal">
+              <form method="dialog" class="modal-box">
+                <div class="flex justify-center p-16 pb-5">
+                  <img src="./images/congo.png" alt="">
+                </div>
+                <h3 class="font-bold text-4xl text-center text-[#111111]">Congratulations</h3>
+                <p class="text-center text-[#11111180] pt-5">Your Purchase the product</p>
+                <div class="modal-action flex justify-center pb-10">
+                  <!-- if there is a button in form, it will close the modal -->
+                  <button class="btn bg-[#E527B2] text-white px-7 " id="btn-go-home">Go Home</button>
+                </div>
+              </form>
+            </dialog>
           </div>
           </div>     
         </div>
