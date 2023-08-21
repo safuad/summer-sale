@@ -57,6 +57,9 @@ applyButton.addEventListener('click', function () {
         const firstTotal = document.getElementById('total');
         firstTotal.innerText = total.toFixed(2).toString();
     }
+    else{
+        alert('Ensure your coupon to get discount')
+    }
 });
 
 
