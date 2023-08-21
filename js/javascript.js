@@ -62,6 +62,14 @@ applyButton.addEventListener('click', function () {
     }
 });
 
+buttonSell.addEventListener('click',function() {
+   
+    const buttonInnerText = buttonSell.innerText;
+    
+    couponInput.value = buttonInnerText
+
+})
+
 
 buttonGoHome.addEventListener('click', resetPage);
 
@@ -73,13 +81,7 @@ function resetPage() {
     findTotalField.innerText = ' 00';
     applyButton.setAttribute('disabled', 'disabled');
     buttonPurchase.setAttribute('disabled', 'disabled');
+    buttonSell.setAttribute('disabled', 'disabled');
     couponInput.value = ''; // Reset the coupon input field
 }
 
-buttonSell.addEventListener('click',function() {
-   
-    const buttonInnerText = buttonSell.innerText;
-    
-    couponInput.value = buttonInnerText
-
-})
